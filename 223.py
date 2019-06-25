@@ -61,7 +61,7 @@ def message_text(event):
         event.reply_token,
         TextSendMessage(text=event.message.text)
     )
-    print event.message.text
+    print( event.message.text)
 
     #in_w = event.message.text[0]
     in_w = ""
@@ -96,7 +96,7 @@ def message_text(event):
         led_status = '5'
 	
 
-    print "led:" + led_status
+    print( "led:" + led_status)
 
 if __name__ == "__main__":
     arg_parser = ArgumentParser(
